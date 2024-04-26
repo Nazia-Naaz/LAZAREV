@@ -35,6 +35,8 @@ ScrollTrigger.refresh();
 
 }
 
+locomotiveAnimation()
+
 
 
 function navAnimation(){
@@ -76,6 +78,12 @@ nav.addEventListener("mouseleave",function(){
    
 })
 }
+/*
+
+navAnimation() */
+
+
+
 
 function page2Animation() {
     var rightElems = document.querySelectorAll(".right-elem")
@@ -93,8 +101,8 @@ rightElems.forEach(function(elem){
     })
     elem.addEventListener("mousemove",function(dets){
         gsap.to(elem.childNodes[3],{
-            x:dets.x - elem.getBoundingClientRect().x-80,
-            y:dets.y - elem.getBoundingClientRect().y-150
+            x:dets.x - elem.getBoundingClientRect().x-70,
+            y:dets.y - elem.getBoundingClientRect().y-90
           
         })
     })
@@ -102,6 +110,7 @@ rightElems.forEach(function(elem){
 
 
 }
+page2Animation() 
 
 
 function page3video(){
@@ -130,6 +139,8 @@ video.addEventListener("click",function(){
 
 }
 
+page3video()
+
 
 
 function secVideo(){
@@ -149,6 +160,8 @@ section.forEach(function(elem){
 
 }
 
+secVideo()
+
 
 function scroller(){
     gsap.from("#btm6-part2 h4, #btm6-part3 h4, #btm6-part4 h4",{
@@ -164,6 +177,7 @@ function scroller(){
     })
 }
 
+scroller()
 
 
     function firstFageAnimation(){
@@ -195,6 +209,7 @@ function scroller(){
         })
         
     }
+    firstFageAnimation()
    
     
 
@@ -205,10 +220,3 @@ function scroller(){
 
 
 
-locomotiveAnimation()
-navAnimation()
-page2Animation() 
-page3video()
-secVideo()
-firstFageAnimation()
-scroller()
